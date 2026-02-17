@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavor Haven - Tropical Smoothie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="body-item">
+    <header class="page-header">
+        <a href="drinks.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <h1>Order Details</h1>
+    </header>
+
+    <div class="item-detail">
+        <div class="item-hero">
+            <img src="images/Tropical-Smoothie.jpg" alt="Tropical Smoothie">
+            </div>
+        </div>
+
+        <div class="item-content">
+            <h1 class="item-name">Tropical Smoothie</h1>
+            
+            <div class="item-meta">
+                <div class="meta-item">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span class="item-price">$6.99</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-utensils"></i>
+                    <span>16 oz</span>
+                </div>
+            </div>
+
+            <div class="item-description">
+                <p>Escape to paradise with our refreshing tropical smoothie! A perfect blend of sweet mango, tangy pineapple, creamy coconut milk, and exotic passion fruit. Topped with a splash of lime juice for that extra zing. It's like a vacation in a glass – healthy, delicious, and absolutely revitalizing!</p>
+            </div>
+
+            <form class="order-form" action="thankyou.html" method="get">
+                <div class="form-section">
+                    <h3>Choose Your Extras</h3>
+                    <ul class="extras-list">
+                        <li>
+                            <input type="checkbox" id="extra1" name="extras" value="protein">
+                            <label for="extra1">
+                                <span class="extra-name">Protein Boost</span>
+                                <span class="extra-price">+$2.00</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="extra2" name="extras" value="chia">
+                            <label for="extra2">
+                                <span class="extra-name">Chia Seeds</span>
+                                <span class="extra-price">+$1.00</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="extra3" name="extras" value="spinach">
+                            <label for="extra3">
+                                <span class="extra-name">Fresh Spinach</span>
+                                <span class="extra-price">+$1.00</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="extra4" name="extras" value="banana">
+                            <label for="extra4">
+                                <span class="extra-name">Extra Banana</span>
+                                <span class="extra-price">+$0.75</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="extra5" name="extras" value="honey">
+                            <label for="extra5">
+                                <span class="extra-name">Organic Honey</span>
+                                <span class="extra-price">+$0.50</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="extra6" name="extras" value="granola">
+                            <label for="extra6">
+                                <span class="extra-name">Granola Topping</span>
+                                <span class="extra-price">+$1.50</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="form-section">
+                    <h3>Special Requests</h3>
+                    <textarea 
+                        name="notes" 
+                        id="notes" 
+                        placeholder="Any allergies, dietary preferences, or special instructions? Let us know here..."
+                        rows="4"
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="order-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    Place Order
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavor Haven - Oreo Milkshake</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="body-item">
+    <header class="page-header">
+        <a href="drinks.html" class="back-btn"><i class="fas fa-arrow-left"></i></a>
+        <h1>Order Details</h1>
+    </header>
+    <div class="item-detail">
+        <div class="item-hero">
+            <img src="images/Oreo-milkshake.jpg" alt="Oreo Milkshake">
+            </div>
+        </div>
+        <div class="item-content">
+            <h1 class="item-name">Oreo Milkshake</h1>
+            <div class="item-meta">
+                <div class="meta-item"><i class="fas fa-dollar-sign"></i><span class="item-price">$7.99</span></div>
+                <div class="meta-item"><i class="fas fa-utensils"></i><span>16 oz</span></div>
+            </div>
+            <div class="item-description">
+                <p>Thick and creamy milkshake made with premium vanilla ice cream blended with crushed Oreo cookies. Topped with whipped cream, cookie crumbles, and chocolate drizzle. A cookie lover's dream!</p>
+            </div>
+            <form class="order-form" action="thankyou.html" method="get">
+                <div class="form-section">
+                    <h3>Choose Your Extras</h3>
+                    <ul class="extras-list">
+                        <li><input type="checkbox" id="extra1" name="extras" value="oreos"><label for="extra1"><span class="extra-name">Extra Oreos</span><span class="extra-price">+$1.50</span></label></li>
+                        <li><input type="checkbox" id="extra2" name="extras" value="chocolate"><label for="extra2"><span class="extra-name">Chocolate Syrup</span><span class="extra-price">+$1.00</span></label></li>
+                        <li><input type="checkbox" id="extra3" name="extras" value="peanut"><label for="extra3"><span class="extra-name">Peanut Butter</span><span class="extra-price">+$1.50</span></label></li>
+                        <li><input type="checkbox" id="extra4" name="extras" value="cherry"><label for="extra4"><span class="extra-name">Cherry on Top</span><span class="extra-price">+$0.50</span></label></li>
+                    </ul>
+                </div>
+                <div class="form-section">
+                    <h3>Special Requests</h3>
+                    <textarea name="notes" id="notes" placeholder="Any allergies, dietary preferences, or special instructions? Let us know here..." rows="4"></textarea>
+                </div>
+                <button type="submit" class="order-btn"><i class="fas fa-shopping-cart"></i>Place Order</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
